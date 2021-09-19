@@ -1,0 +1,86 @@
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(-45deg, #B8CFE6, #528FCC);
+    background-attachment: fixed;
+
+}
+
+header {
+
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.titulo-principal {
+
+    text-transform: uppercase;
+    font-weight: bold;   
+    font-size: 32px;
+    padding: 1em;
+
+}
+
+main {
+
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.visor {
+
+    font-size: 24px;
+    border: 2px solid #767676;
+    width: calc(4*64px - 3*2px - 24px + 1px); /* Colunas * Tamanho Coluna - (Colunas - 1) * 2px[BORDA] */
+    padding: 0.5em;
+
+}
+
+.digitos li {
+
+    display: inline-block;
+
+}
+
+.digitos button {
+
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #767676;
+    transition: 250ms all;
+
+}
+
+.digitos button:hover {
+
+    background: orange;
+    border: 1px solid darkorange;
+
+}
+
+.digitos button:active {
+
+    background: #cf7302;
+    border: 1px solid #af6102;
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    header, main {
+
+        width: auto;
+
+    }
+
+
+}
